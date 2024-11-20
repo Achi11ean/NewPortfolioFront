@@ -7,6 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(localStorage.getItem('token') || null);
   const [loading, setLoading] = useState(true);
+  const apiUrl = "https://entrepreneur-backend.onrender.com";
 
   useEffect(() => {
     if (token) {
