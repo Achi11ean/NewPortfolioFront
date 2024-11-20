@@ -220,8 +220,8 @@ const PerformanceBooking = ({ token, userId, fetchBookings, showPopup }) => {
           <input
             id="price"
             type="number"
-            step="10" // Increment by $5
-            min="70" // Start at $50
+            step=".01" // Increment by $5
+            min=".01" // Start at $50
             value={price}
             onChange={(e) => setPrice(parseFloat(e.target.value) || "")}
             required
