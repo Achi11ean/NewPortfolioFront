@@ -1,0 +1,89 @@
+/* Navbar container */
+.navbar {
+    display: flex;  /* Display items inline */
+    justify-content: center;  /* Center navbar items */
+    align-items: left;
+    padding: 15px 30px;
+    color:white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+
+}
+
+/* List styling */
+.navbar ul {
+    color:white;
+    display: flex;  /* Display items inline */
+    gap: 20px;  /* Space between links */
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    display: inline-flex;  /* Display items inline */
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+
+    max-height: fit-content;
+
+}
+
+/* Link styling */
+.navbar a {
+    color:white;
+    width:20rem;
+    text-decoration: none;  /* Remove underline */
+    font-size: 2rem;
+    display: flex;  /* Display items inline */
+    padding: 8px 16px;  /* Add padding around links */
+    align-items: center;
+
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(255, 103, 103, 0.975);  /* Lighten on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+    
+}
+
+/* Hover and active styling */
+.navbar a:hover {
+    background-color: rgba(58, 97, 255, 0.634);  /* Lighten on hover */
+    transform: scale(1.05);  /* Slight scaling effect */
+}
+
+.active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);  /* Highlight active link */
+    border-bottom: 2px solid white;  /* Bottom border for active */
+}
+/* Styling for the Sign Out button to match other links */
+.navbar .nav-link {
+    color: white;
+    width: 20rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 15px 8px;
+    border-radius: 5px;
+    text-align: left;
+    margin: auto;
+    background-color: rgba(255, 103, 103, 0.975);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none; /* Remove button border */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+/* Hover and active styling for Sign Out button */
+.navbar .nav-link:hover {
+    background-color: rgba(58, 97, 255, 0.634);
+    transform: scale(1.05);
+}
+
+/* Active styling (optional) */
+.navbar .nav-link.active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid white;
+}

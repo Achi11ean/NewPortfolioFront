@@ -1,0 +1,174 @@
+/* booking.css */
+
+.booking-container {
+    padding: 30px;
+    background-image: url('/booking.webp'); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 150vh;
+    border-radius: 45px;
+}
+
+.apple-music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .apple-music-player2 {
+    display: flex;
+    align-items: center;
+    margin-left: 13.5rem;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.booking-forms-container {
+    display: flex;
+    padding: 15px;
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the forms horizontally */
+    align-items: flex-start; /* Align the forms at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    
+}
+.spotify-bookingR-player{
+margin-left: 11rem;
+}
+
+.booking-forms-container > div {
+    flex: 1;
+    max-width: 70rem; /* Limit the width of each form card */
+    min-width: 300px;
+}
+/* Service Cards Container */
+.service-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Individual Service Card Styling */
+.service-card {
+    width: 69.5rem;
+    margin-left:1rem;
+    margin-right: 3rem;
+    max-height: 200px; /* Set a maximum height for the card */
+    padding: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #007BFF #f0f0f0; /* Custom scrollbar colors */
+}
+
+/* Custom scrollbar styling for Webkit browsers (Chrome, Safari) */
+.service-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.service-card::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.service-card::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.service-card h3 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+/* Card Content */
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    color: #ff0000;
+    font-size: 1.3rem;
+
+}
+
+.service-card li {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+.service-card p {
+    font-weight: bold;
+    color: #010403;
+}
+
+
+#bookingtitle {
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(135deg, #ff6ec7, #ffcc33, #00c9ff, #ff3b30, #34d399);
+    height: 6rem;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    font-weight: bolder;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+/* Falling Books Animation */
+/* Falling Books Animation */
+.falling-book {
+    position: absolute;
+    top: -100px;
+    font-size: 2rem;
+    animation: fall 6s linear forwards; /* Updated to use 'forwards' to end the animation properly */
+    opacity: 0.8;
+}
+
+/* Keyframes for the fall animation */
+@keyframes fall {
+    0% {
+        top: -100px;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+/* Random Book Colors */
+.falling-book:nth-child(odd) {
+    color: #ff6347;
+}
+
+.falling-book:nth-child(even) {
+    color: #4682b4;
+}

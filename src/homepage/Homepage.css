@@ -1,0 +1,287 @@
+.homepage {
+    padding: 30px;
+    padding-bottom: 60rem;
+    background-image: url('/brain.webp'); /* Update this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 45px;
+}
+
+.homepage-features {
+    text-align: center;
+}
+
+.homepage-header {
+    background: linear-gradient(
+        135deg,
+        #ff6b6b, #ff9f43, #feca57, #1dd1a1, #48dbfb, #5aadff, #8e44ad
+    );
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden; /* To contain the falling stars */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.homepage-header:hover {
+    transform: scale(1.02);
+}
+
+/* Star styles */
+.star {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    animation: fall 8s linear forwards;
+}
+
+/* Star fall animation */
+@keyframes fall {
+    0% {
+        opacity: 1;
+        transform: translateY(-20px) scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100vh) scale(0);
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .homepage-header {
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
+
+.homepage-contact {
+    background:linear-gradient(45deg, black,green, rgb(159, 159, 46),brown, black, blue);
+    width: 90%;
+    margin:auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 45px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+
+}
+.homepage-contact h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.homepage-contact p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+
+.homepage-contact a:hover {
+    text-decoration: underline;
+}
+
+
+
+#welcome {
+    font-size: 3rem;
+    font-family:fantasy;
+    border-radius: 45px;
+    text-align: center;
+    font-weight: bolder;
+    padding:0px;
+}
+#available {
+    font-size: 2rem;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+.homepage-features {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature-cards {
+    display: column;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 36rem;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 320px;
+    text-align: center;
+    border: 2px solid pink;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+    cursor: pointer;
+}
+
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Container for the thin player */
+
+  
+  /* Thin iframe player */
+
+  .homepagerating {
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 35%;
+    height: 60px;
+    padding: 1rem;
+    padding-right: 12rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-image: url('/starry.webp');
+    opacity: 0.95;
+    margin-top: 1rem;
+    margin-left: 46.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.homepagerating:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Falling star element */
+.star2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    animation: fall 8s linear forwards;
+}
+
+/* Falling star animation */
+@keyframes fallStar {
+    0% {
+        opacity: 1;
+        transform: translateY(-20px) scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.5);
+    }
+}
+
+/* Hover animation trigger */
+.homepagerating:hover .star2 {
+    animation-delay: calc(-1s * var(--i));
+}
+
+.ratingsheader{
+    
+    font-family:cursive;
+    padding-right: 5rem;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    background-color: black;
+    display: flex;
+    font-weight: bold;
+    border-radius: 45px;
+    margin-top: 0rem;
+    padding-left:5rem;
+    margin-left: 15rem;
+    margin-bottom: 1rem;
+}
+
+.ratemusic {
+    display: flex;
+    margin-left: 0rem;
+}
+
+.homepage-calendar {
+    display: flex;
+    margin-right:35rem;
+
+}
+
+
+
+
+
+
+/* Performance container */
+.performance {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bartending container */
+
+/* Falling Emojis Animation */
+.falling-emoji {
+    position: absolute;
+    top: -50px;
+    font-size: 2rem;
+    animation: emojiFall 10s linear forwards;
+    opacity: 0.8;
+}
+
+/* Keyframes for the falling animation */
+@keyframes emojiFall {
+    0% {
+        top: -50px;
+        opacity: 0;
+        transform: translateX(0) rotate(0deg);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+        transform: translateX(100px) rotate(360deg);
+    }
+}
