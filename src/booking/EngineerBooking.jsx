@@ -46,7 +46,7 @@ const EngineerBooking = ({ token, userId, fetchBookings, showPopup }) => {
 
     try {
       const response = await fetch(
-        `${https://entrepreneur-backend.onrender.com}/api/engineeringbookings`,
+        `https://entrepreneur-backend.onrender.com/api/engineeringbookings`,
         {
           method: "POST",
           headers: {
