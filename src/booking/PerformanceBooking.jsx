@@ -54,7 +54,7 @@ const PerformanceBooking = ({ token, userId, fetchBookings, showPopup }) => {
 
     try {
       const response = await fetch(
-        `https://entrepreneur-backend.onrender.com/api/bookings`,
+        `${import.meta.env.VITE_API_URL}/api/bookings`,
         {
           method: "POST",
           headers: {

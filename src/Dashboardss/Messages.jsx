@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Messages.css";
 
-const apiUrl = "https://entrepreneur-backend.onrender.com";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);

@@ -46,7 +46,7 @@ const EngineerBooking = ({ token, userId, fetchBookings, showPopup }) => {
 
     try {
       const response = await fetch(
-        `https://entrepreneur-backend.onrender.com/api/engineeringbookings`,
+        `${import.meta.env.VITE_API_URL}/api/engineeringbookings`,
         {
           method: "POST",
           headers: {
