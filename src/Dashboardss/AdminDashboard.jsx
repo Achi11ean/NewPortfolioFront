@@ -43,7 +43,7 @@ const AdminDashboard = () => {
 
       try {
         const response = await fetch(
-          `${https://entrepreneur-backend.onrender.com}/api/admin-dashboard`,
+          `https://entrepreneur-backend.onrender.com/api/admin-dashboard`,
           {
             method: "GET",
             headers: {
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
 
         // Fetch all regular bookings
         const allBookingsResponse = await fetch(
-          `${https://entrepreneur-backend.onrender.com}/api/all-regular-bookings`,
+          `https://entrepreneur-backend.onrender.com/api/all-regular-bookings`,
           {
             method: "GET",
             headers: {
@@ -83,7 +83,7 @@ const AdminDashboard = () => {
 
         // Fetch all engineering bookings
         const engineeringBookingsResponse = await fetch(
-          `${https://entrepreneur-backend.onrender.com}/api/all-engineering-bookings`,
+          `https://entrepreneur-backend.onrender.com/api/all-engineering-bookings`,
           {
             method: "GET",
             headers: {
