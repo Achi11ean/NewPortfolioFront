@@ -5,7 +5,7 @@ import BookingCalendar from "./BookingCalendar";
 import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 import SendMessage from "./SendMessage";
 
-const apiUrl = https://entrepreneur-backend.onrender.com;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 
 const Homepage = () => {
   const [averageRating, setAverageRating] = useState(null);

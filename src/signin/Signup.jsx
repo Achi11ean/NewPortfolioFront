@@ -4,7 +4,7 @@ import { useAuth } from "../AuthContext";
 import "./Signup.css";
 import Navbar from "../homepage/Navbar";
 
-const apiUrl = https://entrepreneur-backend.onrender.com;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 
 const Signup = () => {
   const [username, setUsername] = useState("");

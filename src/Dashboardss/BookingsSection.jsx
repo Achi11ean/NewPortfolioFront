@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../AuthContext";
 import "./adminDashboard.css";
 
-const apiUrl = https://entrepreneur-backend.onrender.com;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 const BookingsSection = ({
   recentBookings = [],
   recentEngineeringBookings = [],

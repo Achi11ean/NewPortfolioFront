@@ -4,7 +4,7 @@ import "./Signin.css";
 import Navbar from "../homepage/Navbar";
 import { useAuth } from "../AuthContext";
 
-const apiUrl = https://entrepreneur-backend.onrender.com;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");

@@ -5,7 +5,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./bookingCalendar.css";
 
 const localizer = momentLocalizer(moment);
-const apiUrl = https://entrepreneur-backend.onrender.com;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 
 const BookingCalendar = () => {
   const [events, setEvents] = useState([]);

@@ -4,7 +4,7 @@ import Navbar from "../homepage/Navbar";
 import { useAuth } from "../AuthContext";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const apiUrl = https://entrepreneur-backend.onrender.com;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 
 const ClientDashboard = () => {
   const location = useLocation();
