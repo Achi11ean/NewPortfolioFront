@@ -9,7 +9,7 @@ const apiUrl = "https://entrepreneur-backend.onrender.com";
 const ClientDashboard = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const stripePaymentLink = "https://buy.stripe.com/28o7sHcK64iaeJ27sw"; // Replace with your actual Stripe payment link
+  const stripePaymentLink = "https://buy.stripe.com/eVaeVa6Hd5oY5kAfYY"; // Replace with your actual Stripe payment link
 
   const { user, token, signOut, loading } = useAuth(); // Use loading from AuthContext
   const [overview, setOverview] = useState({});
