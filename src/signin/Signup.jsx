@@ -185,7 +185,6 @@ const Signup = () => {
             onChange={(e) => setUserType(e.target.value)}
           >
             <option value="client">Client</option>
-            <option value="admin">Admin</option>
           </select>
         </label>
         <button className="signupbutton" type="submit">
