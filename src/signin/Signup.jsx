@@ -4,7 +4,7 @@ import { useAuth } from "../AuthContext";
 import "./Signup.css";
 import Navbar from "../homepage/Navbar";
 
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = https://entrepreneur-backend.onrender.com;
 
 const Signup = () => {
   const [username, setUsername] = useState("");

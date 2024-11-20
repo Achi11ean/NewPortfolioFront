@@ -20,7 +20,7 @@ const ClientStatsSection = ({
     try {
       // Send DELETE request to delete the user
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/users/${userId}`,
+        `${https://entrepreneur-backend.onrender.com}/api/users/${userId}`,
         {
           method: "DELETE",
           headers: {
@@ -52,7 +52,7 @@ const ClientStatsSection = ({
       const token = localStorage.getItem("token");
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/admin/users`,
+          `${https://entrepreneur-backend.onrender.com}/api/admin/users`,
           {
             method: "GET",
             headers: {
