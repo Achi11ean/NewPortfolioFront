@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com"; // Import EmailJS
 import "./SendMessage.css";
 
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 
 const SendMessage = () => {
   const [name, setName] = useState("");

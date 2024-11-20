@@ -5,7 +5,7 @@ import BookingCalendar from "./BookingCalendar";
 import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 import SendMessage from "./SendMessage";
 
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = "https://entrepreneur-backend.onrender.com";
 
 const Homepage = () => {
   const [averageRating, setAverageRating] = useState(null);

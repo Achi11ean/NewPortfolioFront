@@ -73,15 +73,15 @@ const EngineerBooking = ({ token, userId, fetchBookings, showPopup }) => {
     }
   };
 
-  //   useEffect(() => {
-  //     if (popup) {
-  //       const timer = setTimeout(() => {
-  //         setPopup(false); // Reset popup state after a short delay
-  //       }, 3000); // Display popup for 3 seconds before closing
+    useEffect(() => {
+      if (Popup) {
+        const timer = setTimeout(() => {
+          setPopup(false); // Reset popup state after a short delay
+        }, 3000); // Display popup for 3 seconds before closing
 
-  //       return () => clearTimeout(timer); // Cleanup the timer
-  //     }
-  //   }, [popup]);
+        return () => clearTimeout(timer); // Cleanup the timer
+      }
+    }, [Popup]);
 
   const resetForm = () => {
     setProjectName("");
